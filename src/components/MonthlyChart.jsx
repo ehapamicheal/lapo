@@ -45,18 +45,6 @@ const MonthlyChart = () => {
                     <h2>Monthly Issuance</h2>
                     <LuMaximize2 className="maximize_icon" />
                 </div>
-                
-                {/* <ResponsiveContainer width="100%" height={350}>
-                    <BarChart data={data} width="100%">
-                        <CartesianGrid strokeDasharray="0" vertical={false} stroke="#F2F4F7" />
-                        <XAxis dataKey="name" axisLine={false} tickLine={false} />
-                        <YAxis domain={[0, 100]} ticks={[0, 20, 40, 60, 80, 100]} axisLine={false} tick={{ fontSize: 15, fill: "#667085" }} interval={0} />
-                        <Tooltip />
-                        <Legend content={<CustomLegend />} />
-                        <Bar dataKey="Personalized" stackId="a" fill="#003DA5" radius={[0, 0, 0, 0]} barSize={40} />
-                        <Bar dataKey="Instant" stackId="a" fill="#A8C7FA" radius={[8, 8, 0, 0]} />
-                    </BarChart>
-                </ResponsiveContainer> */}
 
                 <ResponsiveContainer width="100%" height={350}>
                     <BarChart data={data} margin={{top: 9, left: 0, right: 9}}>
