@@ -1,0 +1,404 @@
+.home_container {
+    margin-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.7rem;
+}
+
+
+/*  header wrapper */
+.head_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.head_wrapper .right h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var( --text-color);   
+}
+
+.head_wrapper .right p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16.2px;
+    letter-spacing: 0%;
+    color: var(--text-color);  
+    margin-top: 0.2rem;  
+}
+
+.head_wrapper .right p span {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.head_wrapper .todays_box {
+    border: 1px solid var(--link-text);
+    border-radius: var(--border-radius-0-4);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    width: 190px;
+}
+
+.head_wrapper .todays_box .box1 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.head_wrapper .todays_box .box1 .calender_icon {
+    font-size: 15px;
+}
+
+.head_wrapper .todays_box .box1 p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14.85px;
+    letter-spacing: 0%;
+    color: var(--text-color);
+}
+
+.head_wrapper .todays_box .box2 {
+    border-left: 1px solid var(--link-text);
+    padding-left: 0.6rem;
+}
+
+.head_wrapper .todays_box .box2 p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14.85px;
+    letter-spacing: 0%;
+    color: var(--text-color);    
+}
+
+
+/* Quick Access contents */
+.quick_access_wrapper {
+    margin-top: 1rem;
+    border: 1px solid var( --border-color);
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    padding: 0.8rem 0.6rem;
+}
+
+.quick_access_wrapper .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--text-color);    
+}
+
+.quick_access_wrapper .quick_access_contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+
+.quick_access_contents .main_box {
+    text-decoration: none;
+    background: var(--accent-link);
+    border-radius: var(--border-radius-0-4);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem;
+    transition: 0.3s ease-in;
+}
+
+.quick_access_contents .main_box:hover {
+    transform: scale(1.02);
+}
+
+.main_box .mage_box {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-50);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick_access_contents .main_box .title_box {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.quick_access_contents .main_box .title_box p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--text-color);    
+}
+
+.quick_access_contents .main_box .title_box span {
+    color: var(--gray-color);
+}
+
+
+/* Analytics Container */
+.analytics-container {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.analytics-container .head_text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27.44px;
+    letter-spacing: 0%;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.head_text::after {
+    content: "";
+    flex-grow: 1;
+    height: 0.1rem; 
+    background-color: var(--link-text); 
+    border-radius: 5px;
+}
+
+.analytics-container .analytics-wrapper {
+    margin-top: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+}
+
+.analytics-wrapper .analytics-card {
+    border: 1px solid var( --border-color);
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    padding: 0.8rem 0.6rem;
+    transition: 0.3s ease;
+}
+
+.analytics-wrapper .analytics-card:hover {
+    transform: scale(1.03);
+}
+
+.analytics-wrapper .analytics-card .score_icon {
+    color: var(--green-icon);
+}
+
+.analytics-wrapper .analytics-card .credit_icon {
+    color: var(--violet-purple);
+}
+ 
+.analytics-wrapper .analytics-card .bank_note_icon {
+    color: var( --bright-blue);
+}
+
+.analytics-wrapper .analytics-card .glass_icon {
+    color: var(--orange-shade); 
+}
+
+.analytics-wrapper .analytics-card .top_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--black);
+    margin-top: 0.3rem;   
+}
+
+.analytics-wrapper .analytics-card .box-content {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.analytics-wrapper .analytics-card .box-content .text_h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    letter-spacing: 0%;
+    color: var(--text-color);    
+}
+
+.analytics-wrapper .analytics-card .box-content .box {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.analytics-wrapper .analytics-card .box-content .box .icon_box {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--bg-green);
+    border-radius: var(--border-radius-0-4);
+    padding: 0.4rem;
+}
+
+.analytics-wrapper .analytics-card .box-content .box .icon_box .bend_arrow_icon {
+    color: var(--light-green);
+    font-size: 13px;
+}
+
+.analytics-wrapper .analytics-card .box-content .box .icon_box p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--light-green);    
+}
+
+.analytics-wrapper .analytics-card .box-content .box .p2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--black);    
+}
+
+.analytics-wrapper .analytics-card .box-content .pending_box {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.analytics-wrapper .analytics-card .box-content .pending_box .error_icon {
+    color: var(--orange-shade);
+}
+
+.analytics-wrapper .analytics-card .box-content .pending_box p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--orange-shade);    
+}
+
+
+
+/*======================  MEDIA STYLES GOES HERE =========================*/
+@media (max-width: 1056px) {
+    .quick_access_wrapper .quick_access_contents {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+
+    .quick_access_contents .main_box {
+        width: 100%;
+    }
+
+    .main_box .mage_box {
+        width: 35px;
+        height: 29px;
+    }
+
+    .quick_access_contents .main_box .title_box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .analytics-container .analytics-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem 0.8rem;
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .quick_access_wrapper .quick_access_contents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytics-container .analytics-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytics-wrapper .analytics-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 588px) {
+    .head_wrapper .todays_box {
+        flex-direction: column;
+        align-items: center;
+        width: 110px;
+    }
+
+    .head_wrapper .todays_box .box2 {
+        border-left: none;
+        border-top: 1px solid var(--link-text);
+        padding-left: 0;
+        padding-top: 0.4rem;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .home_container {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+    .head_wrapper {
+        width: 100%;
+    }
+
+    .quick_access_wrapper .quick_access_contents {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-container .analytics-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-wrapper .analytics-card .box-content .text_h2 {
+        font-size: 20px;   
+    }
+}
+
+
+@media (max-width: 462px) {
+    .head_wrapper .todays_box .box1 .calender_icon {
+        font-size: 12px;
+    }
+
+    .head_wrapper .todays_box .box1 p {
+        font-size: 12px;
+    }
+
+    .head_wrapper .todays_box .box2 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .head_wrapper .right h3 {
+        font-size: 16px;
+    }
+    
+    .head_wrapper .right p {
+        font-size: 12px;
+    }
+    
+    .head_wrapper .right p span {
+        font-size: 11px;
+    }
+
+    .head_wrapper .todays_box {
+        width: 130px;
+    } 
+}

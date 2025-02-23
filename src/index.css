@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/assets/fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('/src/assets/fonts/Satoshi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/assets/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/assets/fonts/Satoshi-Black.woff2') format('woff2'),
+       url('/src/assets/fonts/Satoshi-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+}
+/* 
+body {
+  background-color: var(--light-dark);
+} */
+
+:root {
+  
+ /*======================  COLORS =========================*/
+  --primary-color: #002F6C;
+  --link-color: #E4F0FF;
+  --blue-dark: #014DAF;
+  --link-text: #D0D5DD;
+  --white-color: #FFFFFF;
+  --gray-p: #7E8B9C;
+  --bg-color: #F8FBFF;
+  --light-dark: #001735;
+  --light-dark-2: #354054;
+  --secondary-color: #F2F4F7;
+  --text-color: #121212;
+  --border-color: #E2E2E2;
+  --accent-link: #F1F7FF;
+  --gray-color: #808080;
+  --black: #000000;
+  --bg-green: #EFFAF6;
+  --light-green: #29A174;
+  --green-icon: #00984C;
+  --orange-shade: #E78020;
+  --violet-purple: #8020E7;
+  --bright-blue: #2087E7;
+  --ptag-color: #475467;
+  --success-color: #067647;
+  --success-bg: #ECFDF3;
+
+
+
+
+ 
+  --shade-blue: #2A27C9;
+  --light_purple: #514CFF26;
+  --light-gray: #D9D9D9;
+  --primary-variant: #009600;
+  /* --gray-p: #8C8C8C; */
+  --button-color: #a8b;
+  --sky-blue: #098aec;
+
+
+
+
+
+
+  --secondary-dark-purple: #5C00B3;
+  /* --primary-variant-color: #8300FF; */
+  /* --light-purple: #DCB6FF; */
+
+
+  
+ /*======================  =========================*/
+ /*======================  BORDER RADUIS =========================*/
+  --border-radius-0-4: 0.4rem;
+  --border-radius-1: 1rem;
+  --border-radius-5: 5rem;
+  --border-radius-2: 2rem;
+  --border-radius-50: 50%;
+
+
+  /*====================== TRANSITIONS  =========================*/
+  --transition-500: all 500ms ease;
+  --transition-300: all 300ms ease;
+  --transition-200: all 200ms ease;
+
+
+
+}
+
+.main_container {
+  /* display: grid;
+  grid-template-columns: 260px 1fr;
+  height: 100vh; */
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-color);
+  /* background-color: #5C00B3; */
+}
+
+.right_section {
+  /* margin-left: 260px; */
+  /* display: none; */
+  /* margin-left: 290px; */
+  margin-left: 230px;
+  /* width: calc(100% - 290px); */
+  width: calc(100% - 230px);
+}
+
+
+/*======================  MEDIA STYLES GOES HERE =========================*/
+@media (max-width: 1000px) {
+  .right_section {
+    margin-left: 0;
+    width: 100%;
+  }
+}

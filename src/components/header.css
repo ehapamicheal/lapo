@@ -1,0 +1,125 @@
+.header_container {
+    height: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: calc(100% - 230px);
+}
+
+.header_container .header_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_menu {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.header_menu .menu_box {
+    display: none;
+}
+
+.header_menu .menu_box .open_menu {
+    cursor: pointer;
+    color: var(--black);
+    font-size: 17px;
+}
+
+.header_container .header_main .top_title {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.header_container .header_main .top_title p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--light-dark);    
+}
+
+.header_container .header_main .right_side {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.header_container .header_main .right_side .search_box {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid var( --link-text);
+    border-radius: var(--border-radius-2);
+    padding: 0.5rem 0.8rem;
+}
+
+.header_container .header_main .right_side .search_box .search_icon {
+    color: var(--light-dark-2);
+    cursor: pointer;
+}
+
+.header_container .header_main .right_side .search_box input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.64px;
+    letter-spacing: 0%;
+    color: var(--black); 
+}
+
+.header_container .header_main .right_side .search_box input::placeholder {
+    color: var(--light-dark-2);
+    font-size: 14px;
+}
+
+.header_container .header_main .right_side .notfication_icon {
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header_container .header_main .right_side .notfication_icon:hover path {
+    color: var(--primary-color);
+}
+
+.header_container .header_main .right_side .user_avatar {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-50);
+    border: 1px solid var(--link-text);
+    width: 32px;
+    height: 32px;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1000px) {
+    .header_container {
+        width: 100%;
+        left: 0;
+    }
+
+    .header_menu .menu_box {
+        display: block;
+    }
+    
+  
+}
+
+@media (max-width: 580px) {
+    .header_container .header_main .right_side .search_box {
+        display: none;
+    }
+}

@@ -1,0 +1,89 @@
+.card_request_container {
+    margin-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.7rem;
+}
+
+.back_link {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.card_request_header .card_title {
+    display: flex;
+    gap: 1rem;
+}
+
+.card_title .title-2 {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.card_request_container .card_request-top {
+    border-bottom: 1px solid #98A2B3;
+    padding-bottom: 0.5rem;
+}
+
+.card_request_container .card_request-top h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+
+.card_request_container .card_request-top p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: var(--ptag-color);    
+}
+
+.card_request_container .table_box {
+    margin-top: 1rem;
+}
+
+.card_request_container .search_box {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid var(--link-text);
+    border-radius: var(--border-radius-2);
+    background: var(--white-color);
+    padding: 0.5rem 0.8rem;
+    margin-top: 1rem;
+    width: 40%;
+}
+
+.card_request_container .search_box .search_icon {
+    color: var(--gray-color);
+}
+
+.card_request_container .search_box input {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: var(--black);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;   
+}
+
+.card_request_container .search_box input::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card_request_container .table_box {
+    border-top: 1px solid #98A2B3;
+    padding-top: 0.5rem;
+}
+
+.card_request_container .table_box table {
+    width: 100%;
+    border-collapse: collapse;
+}

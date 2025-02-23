@@ -1,0 +1,223 @@
+.monthly_chart_container {
+    margin-top: 1rem;
+}
+
+.monthly_chart_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+}
+
+.monthly_chart_wrapper .monthly_box {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.monthly_chart_wrapper .monthly_box .head,
+.monthly_chart_wrapper .income-date_wrapper .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.monthly_chart_wrapper .table-container .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.monthly_chart_wrapper .monthly_box .head h2,
+.monthly_chart_wrapper .table-container .head h2,
+.monthly_chart_wrapper .income-date_wrapper .head h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--text-color);    
+}
+
+.monthly_chart_wrapper .monthly_box .head .maximize_icon,
+.monthly_chart_wrapper .table-container .head .maximize_icon,
+.monthly_chart_wrapper .income-date_wrapper .head .maximize_icon {
+    color: var(--link-text);
+}
+
+.monthly_chart_wrapper .table-container {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    padding: 0.8rem 0.6rem;
+}
+
+.monthly_chart_wrapper .table-container .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.table-wrapper {
+    height: 350px;
+}
+
+.table_main {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.table_main tr th {
+    text-align: center;
+}
+
+.table_main tr th {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--black);
+    padding: 0.7rem 0.5rem;
+    background: var(--accent-link);
+}
+
+.table_main th:first-child {
+    text-align: left;
+}
+
+.table_main tbody tr .branch,
+.table_main tbody tr .type,
+.table_main tbody tr .quantity {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: var(--ptag-color);    
+}
+
+.table_main tbody tr .type,
+.table_main tbody tr .quantity {
+    text-align: center;
+}
+
+.table_main tbody tr {
+    border-bottom: 1px solid #EAECF0;
+}
+
+.table_main tbody tr td {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+    text-align: left;
+}
+
+.status-label {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.status-ready {
+    background: var(--success-bg);
+    color: var(--success-color);
+    border-radius: var(--border-radius-2);
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+
+.status-inprogress {
+    background: #FFFAEB;
+    color: #B54708;
+    border-radius: var(--border-radius-2);
+    border: 1px solid #FEDF89;
+}
+
+.status-acknowledged {
+    background: #EFF8FF;
+    color: #175CD3;
+    border-radius: var(--border-radius-2);
+    border: 1px solid #B2DDFF;
+}
+
+.status-pending {
+    background: #F9FAFB;
+    color: #344054;
+    border-radius: var(--border-radius-2);
+    border: 1px solid #EAECF0;
+}
+
+.table_main tbody tr .view-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    cursor: pointer;
+    color: var( --blue-dark);
+    text-align: center;
+}
+
+.income-date_wrapper {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    padding: 0.8rem 0.6rem;
+}
+
+.pie_wrapper {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-0-4);
+    background: var(--white-color);
+    padding: 0.8rem 0.6rem;
+}
+
+.pie_wrapper h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--text-color); 
+}
+
+
+
+
+
+
+
+
+
+/*======================  MEDIA STYLES GOES HERE =========================*/
+@media (max-width: 786px) {
+    .monthly_chart_wrapper {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+}
+
+/* @media (max-width: 458px) {
+    .table-wrapper {
+        overflow-x: auto;
+        max-width: 400px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table_main {
+        width: 100%;
+    }
+} */
+
+@media (max-width: 458px) {
+    .table-container {
+        display: none;
+    }
+
+}
+
+
