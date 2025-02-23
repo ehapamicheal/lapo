@@ -2,7 +2,6 @@ import './monthly-chart.css';
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { LuMaximize2 } from "react-icons/lu";
 import { cardRequests } from '../Data';
-import CustomLegend from './CustomLegend';
 
 
 const MonthlyChart = () => {
