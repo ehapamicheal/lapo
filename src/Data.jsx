@@ -1,7 +1,7 @@
 // SIDEBAR
 // import { MdDashboard } from "react-icons/md";
-import { FaBuilding, FaChartBar, FaCreditCard, FaUser, FaDatabase, FaCog, FaMobileAlt, FaClipboardList } from "react-icons/fa";
-import { HiOutlineHome, HiOutlineUser } from "react-icons/hi";
+import { FaUser, FaMobileAlt } from "react-icons/fa";
+import { HiOutlineUser } from "react-icons/hi";
 import { TbBrandDatabricks } from "react-icons/tb";
 import { RiListUnordered } from "react-icons/ri";
 import { FaRegMap } from "react-icons/fa6";
@@ -11,6 +11,9 @@ import { HiUserGroup } from "react-icons/hi2";
 import { PiCreditCard } from "react-icons/pi";
 import { MdOutlineCreditScore } from "react-icons/md";
 import { CiCreditCardOff } from "react-icons/ci";
+import { GiSwipeCard } from "react-icons/gi";
+import { TbAdjustmentsCheck } from "react-icons/tb";
+import { AiOutlineStock } from "react-icons/ai";
 
 
 // QUICK ACCESS
@@ -38,11 +41,11 @@ export const sidebarLinks = [
   },
   { name: "Card Scheme", 
     path: "/card-scheme", 
-    icon: <FaUser /> 
+    icon: <TbAdjustmentsCheck /> 
   },
   { name: "Card Profile", 
     path: "/card-profile", 
-    icon: <FaDatabase /> 
+    icon: <GiSwipeCard /> 
   },
   { name: "Card Request",
     path: "/card-request", 
@@ -50,7 +53,7 @@ export const sidebarLinks = [
   },
   { name: "Stock", 
     path: "/stock", 
-    icon: <FaMobileAlt /> 
+    icon: <AiOutlineStock /> 
   },
   { name: "Cards", 
     path: "/cards",  

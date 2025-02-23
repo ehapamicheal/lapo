@@ -47,7 +47,6 @@
     padding-right: 0.4rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 2rem;
     margin-top: 2rem;
     max-height: calc(100vh - 100px);
 }
@@ -222,9 +221,5 @@
     
     .nav_container .close_box {
         display: block;
-    }
-
-    .sidebar_bottom {
-      padding-bottom: 1.3rem;
     }
 }

@@ -3,11 +3,18 @@ import { BiSearch } from "react-icons/bi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useLocation } from "react-router-dom";
+
 
 
 
 
 const Header = ({ onToggleSidebar, children, className }) => {
+  const location = useLocation();
+
+  const hideSearchBox = ["/branches", "/users", "/card-profile", "/card-request", "/card-request/card-request-pending"].includes(location.pathname);
+
+
     return (
       <header className={`header_container ${className}`}>
         <div className="header_main">
@@ -23,10 +30,17 @@ const Header = ({ onToggleSidebar, children, className }) => {
             </div>
   
             <div className="right_side">
-                <div className="search_box">
+                {/* <div className="search_box">
                     <BiSearch className="search_icon" />
                     <input type="text" placeholder="Search" />  
-                </div>
+                </div> */}
+
+                {!hideSearchBox && (
+                    <div className="search_box">
+                        <BiSearch className="search_icon" />
+                        <input type="text" placeholder="Search" />  
+                    </div>
+                )}
     
                 <IoIosNotificationsOutline className="notfication_icon" />
                 <FiUser className="user_avatar" />
